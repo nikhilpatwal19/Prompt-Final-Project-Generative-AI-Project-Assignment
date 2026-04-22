@@ -1,0 +1,26 @@
+======================================================================
+EXAMPLE RAG ASSESSMENT — Signature Bank
+======================================================================
+
+Bank: Signature Bank
+Sources Retrieved: 6
+Retrieval Strategy: enhanced multi-strategy
+
+Assessment:
+----------------------------------------------------------------------
+Based on the provided SEC 10-K filing excerpts, here's a concise assessment for Signature Bank:
+
+TOP RISKS:
+1. **Interest Rate Risk**: Increases in interest rates may lead to higher funding costs, reduced net interest margin, and decreased liquidity, affecting the bank's financial results.
+2. **Depositor Withdrawal Risk**: A large number of depositors withdrawing their accounts could negatively impact the bank's liquidity and funding costs, reducing its ability to maintain adequate liquidity.
+3. **Uninsured Deposit Risk**: A significant portion of the bank's deposits may be uninsured, leaving it vulnerable to potential losses if depositors withdraw their funds.
+
+LIQUIDITY: **MODERATE**
+The bank's liquidity position appears to be moderate, with a significant portion of its deposits being uninsured, but it has access to additional borrowing capacity from the FHLB and the FRB, which helps mitigate this risk.
+
+WARNING LANGUAGE: **No assurance of mitigation strategies' success**, **potential losses from interest rate swaps and derivatives**, **unrealized losses on securities**, and **potential deposit withdrawals**.
+
+FRAGILITY RATING: **MODERATE**
+The bank's moderate liquidity position and potential risks associated with interest rate changes, depositor withdrawals, and uninsured deposits contribute to a moderate fragility rating.
+
+REASONING: Signature Bank's moderate fragility rating is due to its reliance on uninsured deposits and potential risks associated with interest rate changes and depositor withdrawals. While it has access to additional borrowing capacity, this may not be sufficient to mitigate the impact of a large-scale depositor withdrawal or significant interest rate increases.

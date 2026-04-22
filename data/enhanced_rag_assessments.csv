@@ -1,0 +1,476 @@
+bank_name,assessment,num_sources,strategies_used
+Citizens Financial Group,"TOP RISKS:
+1. **Interest Rate Risk**: Changes in interest rates may negatively impact Citizens Financial Group's net interest margin and net interest income due to increased funding costs and reduced loan and deposit growth.
+2. **Deposit Risk**: Citizens Financial Group's reliance on deposits, particularly uninsured deposits, may expose the company to liquidity risks if depositors withdraw their funds, and the company may struggle to replace them.
+3. **Liquidity Risk**: Citizens Financial Group's liquidity position may be negatively impacted by economic conditions, changes in regulations, and the company's ability to access historical and alternative sources of liquidity.
+
+LIQUIDITY: **MODERATE**
+Citizens Financial Group appears to have a moderate liquidity position, with a significant portion of uninsured deposits and a relatively high percentage of deposits at risk. However, the company has taken steps to mitigate this risk by maintaining a high level of liquidity and having access to additional borrowing capacity.
+
+WARNING LANGUAGE: **""no assurance,"" ""may be unable to access,"" ""may be negatively impacted,"" ""may not be successful,"" and ""there can be no assurance""**
+These warning terms indicate that Citizens Financial Group faces significant risks and uncertainties that may impact its financial performance and liquidity.
+
+FRAGILITY RATING: **ELEVATED**
+Citizens Financial Group's elevated fragility rating reflects the company's exposure to interest rate risk, deposit risk, and liquidity risk. While the company has taken steps to mitigate these risks, the potential consequences of a significant economic downturn or changes in interest rates could have a material impact on the company's financial performance.
+
+REASONING: Citizens Financial Group's elevated fragility rating is driven by the company's significant exposure to interest rate risk, deposit risk, and liquidity risk. While the company has taken steps to mitigate these risks, the potential consequences of a significant economic downturn or changes in interest rates could have a material impact on the company's financial performance.",6,['general_fallback']
+Columbia Banking System,"Based on the provided excerpts from SEC 10-K filings, here is the risk assessment for Columbia Banking System:
+
+TOP RISKS:
+1. **Interest Rate Risk**: Changes in interest rates may affect the bank's net interest margin, funding costs, and liquidity position, potentially leading to reduced profitability and increased risk.
+2. **Deposit Risk**: The bank's reliance on deposits, which can be withdrawn on demand or short notice, may lead to liquidity issues and increased funding costs if depositors withdraw their funds.
+3. **Credit Risk**: The bank's exposure to credit risk, particularly in its loan portfolio, may be affected by changes in market conditions, economic downturns, and the quality of its loan assets.
+
+LIQUIDITY: **MODERATE**
+The bank's liquidity position appears to be moderate, with a significant portion of its deposits insured by the FDIC and a substantial amount of collateralized deposits. However, the bank's reliance on deposits and its potential exposure to interest rate risk may impact its liquidity position in the future.
+
+WARNING LANGUAGE: **""No assurance,"" ""may be unable to access historical and alternative sources of liquidity,"" ""may be unable to replace such funds in the future,"" ""there can be no assurance,"" ""may be less beneficial or result in losses,"" and ""may be negatively impacted""** are key warning language found in the provided excerpts.
+
+FRAGILITY RATING: **MODERATE**
+The bank's moderate liquidity position, combined with its exposure to interest rate risk and deposit risk, suggests a moderate level of fragility. While the bank appears to have some mitigating strategies in place, such as interest rate swaps and collateralized deposits, its reliance on deposits and potential exposure to credit risk may still pose some risk.
+
+REASONING: Columbia Banking System appears to be moderately fragile due to its reliance on deposits and potential exposure to interest rate risk and credit risk. While the bank has some mitigating strategies in place, its moderate liquidity position and reliance on deposits suggest that it may be vulnerable to changes in market conditions and economic downturns.",6,['general_fallback']
+Comerica,"Based on the provided SEC 10-K filing excerpts, here is the assessment for Comerica:
+
+TOP RISKS:
+1. **Interest Rate Risk**: Changes in interest rates may impact Comerica's net interest margin, net interest income, and loan and deposit growth, as well as the quality of its loan portfolio.
+2. **Liquidity Risk**: Comerica's liquidity position may be negatively impacted by economic conditions, deposit withdrawals, and the availability of funding sources, including the capital markets, brokered deposits, and borrowings from the FHLB.
+3. **Deposit Risk**: Comerica's access to deposits may be affected by the liquidity needs of its depositors, and a substantial majority of its liabilities are checking accounts and other liquid deposits, which are payable on demand or upon several days' notice.
+
+LIQUIDITY: **MODERATE**
+Comerica's liquidity position appears to be moderate, with a significant portion of its liabilities being liquid deposits. However, the company's reliance on funding sources such as the capital markets, brokered deposits, and borrowings from the FHLB may pose some liquidity risks.
+
+WARNING LANGUAGE: **""No assurance that such mitigation strategies will be available or successful""** and **""There can be no assurance that such mitigation strategies will be available or successful""** (Source 2 and Source 3) indicate that Comerica may not be able to successfully mitigate its interest rate and liquidity risks.
+
+FRAGILITY RATING: **MODERATE**
+Comerica's moderate liquidity position and reliance on funding sources, combined with its interest rate and deposit risks, suggest a moderate level of fragility.
+
+REASONING: Comerica's moderate fragility rating is due to its ability to manage its liquidity position and mitigate its interest rate risks through various strategies. However, the company's reliance on funding sources and its deposit risks may pose some challenges in the event of economic downturns or changes in interest rates.",6,['general_fallback']
+Cullen/Frost Bankers,"Based on the provided excerpts from SEC 10-K filings, here's a concise assessment for Cullen/Frost Bankers:
+
+TOP RISKS:
+1. **Interest Rate Risk**: Increases in interest rates may negatively impact net interest margin, net interest income, and the value of securities, potentially leading to reduced profitability.
+2. **Deposit Market Volatility**: Changes in deposit rates and availability may lead to increased funding costs, reduced liquidity, and decreased access to deposits, affecting the bank's capital resources and financial results.
+3. **Credit Risk**: The bank's exposure to credit risk, particularly in the mortgage-backed securities portfolio, may lead to losses if borrowers default or interest rates rise, negatively impacting the bank's financial performance.
+
+LIQUIDITY: **MODERATE**
+The bank's liquidity position appears to be moderate, with a significant portion of deposits insured by the FDIC, but also with a substantial amount of uninsured deposits, which could pose a risk if depositors withdraw their funds.
+
+WARNING LANGUAGE: **""There can be no assurance that such mitigation strategies will be available or successful""**, indicating that the bank's efforts to manage risks may not be effective, and **""Changes in the cost and availability of funding due to changes in the deposit market and credit market may adversely affect our capital resources, liquidity and financial results""**, highlighting the potential impact of market changes on the bank's financial stability.
+
+FRAGILITY RATING: **MODERATE**
+The bank's moderate liquidity position, combined with the potential risks associated with interest rate changes and credit risk, suggest a moderate level of fragility.
+
+REASONING: Cullen/Frost Bankers appears to be vulnerable to changes in the interest rate environment and deposit market volatility, which could negatively impact its profitability and liquidity. While the bank has implemented strategies to mitigate these risks, there is no guarantee of their effectiveness.",6,['general_fallback']
+Fifth Third Bancorp,"**TOP RISKS:**
+
+1. **Interest Rate Risk**: Fifth Third Bancorp is exposed to interest rate risk due to the potential adverse changes to net interest income and financial position resulting from changes in market interest rates.
+2. **Credit Risk**: The bank faces credit risk due to the potential deterioration in the macroeconomic environment, commercial borrowers' ability to repay loans, and the impact of the COVID-19 pandemic on credit quality.
+3. **Transition Risk**: The bank is at risk due to the transition from LIBOR to SOFR, which may behave differently in reaction to monetary, market, and economic events.
+
+**LIQUIDITY:**
+The liquidity position of Fifth Third Bancorp appears to be manageable, with a sufficient reserve for unfunded commitments and a comprehensive review of legacy documentation to facilitate the transition to alternative reference rates.
+
+**WARNING LANGUAGE:**
+Key warning language found in the filing includes:
+
+* ""The replacement of LIBOR could adversely affect Fifth Third's revenue or expenses and the value of those assets or obligations.""
+* ""The continuing pandemic and related global economic crisis will adversely impact its future operating results.""
+* ""The change in market interest rates over time exposes the Bancorp to interest rate risk through potential adverse changes to net interest income and financial position.""
+
+**FRAGILITY RATING:** MODERATE
+**REASONING:** Fifth Third Bancorp appears to have a moderate level of fragility due to its exposure to interest rate risk, credit risk, and transition risk. While the bank has taken steps to manage these risks, the potential impact of the COVID-19 pandemic and the transition from LIBOR to SOFR may still pose significant challenges to its financial performance and stability.",8,['bank_specific']
+First Horizon,"TOP RISKS:
+1. **Interest Rate Risk**: First Horizon's net interest income is sensitive to changes in interest rates, and the bank's variable-rate loans and deposits may pose a risk to earnings and capital in a rising interest rate environment.
+2. **Credit Risk**: The bank's HELOC portfolio and credit card and other consumer loan portfolio carry elevated risks of default, particularly in a rising interest rate environment, potentially stressing borrower capacity to repay the loan at the higher interest rate.
+3. **Capital Adequacy**: First Horizon's capital ratios have decreased in 2025, largely from an increase in risk-weighted assets, and the bank's ability to maintain capital above well-capitalized standards plus the required capital conservation buffer is uncertain.
+
+LIQUIDITY: **MODERATE**
+First Horizon's liquidity position is moderate, with a decrease in noninterest-bearing deposits and an increase in interest-bearing deposits in 2025. However, the bank's liquidity metrics are not explicitly disclosed, making it difficult to assess the bank's ability to meet its short-term obligations.
+
+WARNING LANGUAGE: 
+- ""elevated risks of default""
+- ""potentially stressing borrower capacity to repay the loan at the higher interest rate""
+- ""capital conservation buffer""
+- ""well-capitalized standards""
+
+FRAGILITY RATING: **MODERATE**
+REASONING: First Horizon's moderate liquidity position and decreased capital ratios in 2025 suggest a moderate level of fragility. However, the bank's risk management practices, such as its HELOC underwriting guidelines and continuous account reviews, may help mitigate some of these risks.",8,['bank_specific']
+First Republic Bank,"Based on the provided SEC 10-K filing excerpts, here is the assessment for First Republic Bank:
+
+**TOP RISKS:**
+
+1. **Interest Rate Risk**: Changes in interest rates may negatively impact the bank's net interest margin, net interest income, and overall financial results.
+2. **Deposit Risk**: The bank's access to deposits may be affected by the liquidity needs of depositors, and a substantial majority of its liabilities are checking accounts and other liquid deposits, which are payable on demand or upon several days' notice.
+3. **Liquidity Risk**: The bank's liquidity position may be negatively impacted if economic conditions do not improve or if they decline, and the bank may be unable to access historical and alternative sources of liquidity.
+
+**LIQUIDITY:** The bank's liquidity position appears to be relatively stable, with uninsured deposits representing 22.3% of total deposits at December 31, 2025, and the bank having additional borrowing capacity from the FHLB and the FRB.
+
+**WARNING LANGUAGE:** Key warning language found includes ""there can be no assurance that such mitigation strategies will be available or successful,"" ""we may be unable to access historical and alternative sources of liquidity,"" and ""our liquidity position may be negatively impacted if economic conditions do not improve or if they decline.""
+
+**FRAGILITY RATING:** MODERATE
+**REASONING:** While the bank's liquidity position appears to be relatively stable, the top risks identified, including interest rate risk and deposit risk, could potentially impact the bank's financial results and liquidity position. The warning language found in the excerpts suggests that the bank may be vulnerable to changes in interest rates and economic conditions, which could lead to a moderate level of fragility.",6,['general_fallback']
+Glacier Bancorp,"TOP RISKS:
+1. **Interest Rate Risk**: Glacier Bancorp may face challenges in maintaining adequate liquidity and net interest margin due to rising interest rates, which could lead to higher funding costs and reduced net interest income.
+2. **Deposit Risk**: The bank may experience deposit outflows if customers withdraw their deposits in favor of alternative investments, potentially affecting its liquidity position and capital resources.
+3. **Liquidity Risk**: Glacier Bancorp's ability to access historical and alternative sources of liquidity, including the capital markets, brokered deposits, and borrowings from the FHLB, may be negatively impacted by changes in the deposit market and credit market.
+
+LIQUIDITY: **MODERATE**
+Glacier Bancorp's liquidity position appears to be manageable, with a moderate level of uninsured deposits and a relatively high level of immediately available liquidity. However, the bank's reliance on deposits and its potential exposure to deposit outflows may pose some liquidity risks.
+
+WARNING LANGUAGE: **""No assurance that such mitigation strategies will be available or successful""** and **""there can be no assurance that we will be successful in implementing any new mitigation strategies""** suggest that Glacier Bancorp's risk management strategies may not be effective in addressing potential risks.
+
+FRAGILITY RATING: **MODERATE**
+Glacier Bancorp's risk profile appears to be moderate, with a mix of manageable and potential risks. While the bank's liquidity position is relatively stable, its exposure to interest rate risk and deposit risk may pose some challenges in the future.
+
+REASONING: Glacier Bancorp's moderate risk profile is driven by its relatively stable liquidity position, but also by its potential exposure to interest rate risk and deposit risk. The bank's ability to manage these risks effectively will be crucial in maintaining its financial stability and competitiveness in the market.",6,['general_fallback']
+Heartland BancCorp,"TOP RISKS:
+1. **Credit Risk**: The bank's loan portfolio is primarily secured by real estate, which reduces loss exposure but also increases the risk of credit losses due to market volatility and borrower defaults.
+2. **Regulatory Capital Requirements**: The bank must maintain minimum capital ratios, including a CET1 risk-based capital ratio of 4.5%, a Tier 1 risk-based capital ratio of 6.0%, and a total risk-based capital ratio of 8.0%, to avoid restrictions on capital distributions and discretionary bonus payments.
+3. **Market Risk**: The bank's loan portfolio is exposed to market risk due to the volatility of commercial real estate and other asset classes, which could lead to credit losses and impact the bank's capital ratios.
+
+LIQUIDITY: **MODERATE**
+The bank's liquidity position appears to be moderate, with a sufficient level of liquid assets to meet short-term obligations. However, the bank's reliance on wholesale funding and its exposure to market risk may impact its ability to access liquidity in times of stress.
+
+WARNING LANGUAGE: **""Credit losses are inherent in the lending business and could have a material adverse effect on our operating results and ability to meet our obligations.""**
+
+FRAGILITY RATING: **LOW**
+The bank's capital ratios and liquidity position appear to be stable, and the bank has taken steps to mitigate regulatory capital requirements. However, the bank's exposure to credit risk and market risk may impact its ability to maintain its capital ratios and liquidity position in times of stress.
+
+REASONING: Heartland BancCorp appears to have a stable financial position, with sufficient capital ratios and liquidity to meet regulatory requirements. However, the bank's exposure to credit risk and market risk may impact its ability to maintain its capital ratios and liquidity position in times of stress, which could lead to a higher fragility rating.",8,['bank_specific']
+Huntington Bancshares,"Based on the provided excerpts from SEC 10-K filings, here's a concise assessment for Huntington Bancshares:
+
+TOP RISKS:
+1. **Interest Rate Risk**: The risk of rising interest rates affecting net interest margin, net interest income, and the value of securities held in the portfolio.
+2. **Depositor Withdrawal Risk**: The risk of depositors withdrawing their funds, potentially leading to a loss of liquidity and increased funding costs.
+3. **Funding Cost Risk**: The risk of increased funding costs due to changes in the deposit market and credit market, potentially affecting capital resources, liquidity, and financial results.
+
+LIQUIDITY: **MODERATE**
+Huntington Bancshares appears to have a moderate liquidity position, with a significant portion of uninsured deposits and a substantial amount of collateralized deposits. However, the bank's ability to access alternative sources of liquidity, such as the FHLB and FRB, may be affected by changes in interest rates and economic conditions.
+
+WARNING LANGUAGE: **""No assurance,"" ""may be unable,"" ""may be adversely affected,"" and ""there can be no assurance""** are key warning language found in the provided excerpts, indicating potential risks and uncertainties that may impact Huntington Bancshares' financial performance.
+
+FRAGILITY RATING: **MODERATE**
+The fragility rating is moderate due to the potential risks associated with interest rate changes, depositor withdrawal, and funding costs. While Huntington Bancshares appears to have a moderate liquidity position, the bank's ability to manage these risks and maintain its financial stability is uncertain.
+
+REASONING: Huntington Bancshares faces significant risks related to interest rate changes, depositor withdrawal, and funding costs, which may impact its liquidity position and financial performance. While the bank has implemented mitigation strategies, there is no assurance that these strategies will be successful, and the potential risks and uncertainties associated with these factors warrant a moderate fragility rating.",6,['general_fallback']
+Independent Bank Group,"TOP RISKS:
+1. **Interest Rate Risk**: The company is exposed to interest rate risk due to its monetary assets and liabilities, which can lead to losses if market interest rates move against the company's position.
+2. **Credit Risk**: The company has a significant concentration in commercial real estate loans and exposure to credit risk related to the energy industry, which can lead to losses if borrowers default on their loans.
+3. **Liquidity Risk**: The company is subject to liquidity risk due to its reliance on cash flow from operations, redeployment of pre-paid and maturing balances, and access to alternative sources of funds, which can be affected by changes in interest rates and economic conditions.
+
+LIQUIDITY: The company's liquidity position appears to be adequate, with a variety of sources to meet its short-term and long-term cash requirements, including cash, interest-bearing deposits, federal funds sold, securities available for sale, and maturing or prepaying balances in its investment and loan portfolios.
+
+WARNING LANGUAGE: Key warning language found in the filings includes ""materially and adversely affected,"" ""adversely affect,"" ""could decline significantly,"" and ""you could lose all or part of your investment,"" indicating potential risks to the company's financial condition, results of operations, and cash flows.
+
+FRAGILITY RATING: MODERATE
+REASONING: While the company appears to have a solid liquidity position and adequate capital levels, its exposure to interest rate risk, credit risk, and liquidity risk suggests a moderate level of fragility. The company's ability to manage these risks and maintain its liquidity position will be critical to its long-term success.",8,['bank_specific']
+KeyCorp,"**TOP RISKS:**
+
+1. **Liquidity Risk**: KeyCorp's ability to meet its short-term funding needs, particularly in a stressed market or economic downturn, is a significant concern. The company's reliance on wholesale funding and potential limitations on dividend payments by its national bank subsidiaries could exacerbate liquidity issues.
+2. **Regulatory Capital Requirements**: KeyCorp's compliance with regulatory capital requirements, including the stress capital buffer and potential countercyclical capital buffer, poses a risk to its capital adequacy and ability to absorb potential losses.
+3. **Market Risk**: A downturn in the U.S. economy or a decline in consumer and business confidence could negatively impact KeyCorp's business and access to capital markets, leading to reduced demand for its products and services.
+
+**LIQUIDITY:**
+KeyCorp's liquidity position is **MODERATELY VULNERABLE**. While the company maintains a liquid asset portfolio and has implemented strategies to manage funding risks, its reliance on wholesale funding and potential limitations on dividend payments by its national bank subsidiaries could compromise its ability to meet short-term funding needs in a stressed market.
+
+**WARNING LANGUAGE:**
+Key warning language found in the filings includes:
+
+* ""A rating downgrade of the securities of KeyCorp or KeyBank could adversely affect our access to liquidity and could significantly increase our cost of funds...""
+* ""In the event KeyBank is unable to pay dividends to us, we may not be able to service debt, pay obligations, or pay dividends on our common or preferred stock.""
+* ""A worsening of economic and market conditions, downside shocks, or a return to recessionary economic conditions could result in adverse effects on Key and others in the financial services industry.""
+
+**FRAGILITY RATING:**
+**MODERATE**
+
+**REASONING:**
+KeyCorp's liquidity position and regulatory capital requirements pose significant risks to its financial stability. While the company has implemented strategies to manage these risks, the potential for a stressed market or economic downturn could compromise its ability to meet short-term funding needs and comply with regulatory requirements. Overall, KeyCorp's fragility rating is MODERATE, reflecting a moderate level of vulnerability to potential risks and challenges.",8,['bank_specific']
+M&T Bank,"TOP RISKS:
+
+1. **Credit risk**: M&T Bank's exposure to commercial real estate loans, particularly those in the hotel, office, retail, multifamily, and healthcare sectors, poses a significant risk due to inflationary pressures, rising interest rates, and liquidity concerns. The Company's experience with volatile fluctuations in value through economic cycles and changing economic conditions also increases the risk of potential losses.
+2. **Interest rate risk**: The bank's net interest spread declined in 2023 due to higher rates on interest-bearing liabilities, which may impact profitability if interest rates continue to rise. The Company's reliance on short-term borrowings and variable-rate loans also increases its exposure to interest rate risk.
+3. **Liquidity risk**: M&T Bank's liquidity position is vulnerable due to its high reliance on short-term borrowings and variable-rate loans, which may become difficult to refinance if interest rates rise further. The Company's management of liquidity is critical to maintaining its financial stability.
+
+LIQUIDITY: M&T Bank's liquidity position is MODERATELY VULNERABLE due to its high reliance on short-term borrowings and variable-rate loans.
+
+WARNING LANGUAGE: Key terms found include ""inflationary pressures,"" ""rising interest rates,"" ""liquidity concerns,"" ""volatile fluctuations in value,"" and ""potential losses,"" which suggest potential risks to the Company's financial stability.
+
+FRAGILITY RATING: MODERATE
+
+REASONING: M&T Bank's exposure to credit risk, interest rate risk, and liquidity risk poses a moderate level of fragility. While the Company has taken steps to manage its liquidity and has a strong capital position, its reliance on short-term borrowings and variable-rate loans increases its vulnerability to interest rate risk and liquidity risk. The potential for losses in its commercial real estate loan portfolio also poses a significant risk to the Company's financial stability.",8,['bank_specific']
+PacWest Bancorp,"TOP RISKS:
+
+1. **Credit Risk**: The company's focus on relationship-based business banking to small, middle-market, and venture-backed businesses nationwide increases its exposure to credit risk, particularly in the event of economic downturns or industry-specific challenges.
+2. **Interest Rate Risk**: The company's reliance on tax-exempt interest on certain loans and investment securities may lead to fluctuations in Net Interest Margin (NIM) due to changes in interest rates, which could negatively impact profitability.
+3. **Regulatory Risk**: As a bank holding company, PacWest Bancorp is subject to various regulations and laws, including the Federal Deposit Insurance Act (FDIA) and the Federal Deposit Insurance Corporation Improvement Act (FDICIA), which may impose additional costs, restrictions, or requirements that could impact its operations and profitability.
+
+LIQUIDITY: PacWest Bancorp's liquidity position appears to be relatively stable, with a strong deposit base and access to various funding sources, including the Federal Home Loan Bank of San Francisco. However, the company's reliance on short-term funding sources may increase its vulnerability to liquidity risk in times of market stress.
+
+WARNING LANGUAGE: Key warning language found in the SEC 10-K filings includes:
+
+* ""Credit risk"" and ""interest rate risk"" are identified as significant risks in the company's business.
+* The company notes that changes in interest rates, economic conditions, or regulatory requirements could negatively impact its financial performance.
+* The company's reliance on short-term funding sources and its exposure to credit risk are highlighted as potential risks.
+
+FRAGILITY RATING: MODERATE
+
+REASONING: While PacWest Bancorp appears to have a relatively stable liquidity position and a strong deposit base, its exposure to credit risk, interest rate risk, and regulatory risk may increase its vulnerability to market and economic fluctuations. The company's focus on relationship-based business banking and its reliance on tax-exempt interest on certain loans and investment securities may also contribute to its moderate fragility rating.",6,['bank_specific']
+Pinnacle Financial Partners,"**TOP RISKS:**
+
+1. **Interest Rate Risk**: Pinnacle Financial Partners may face challenges in maintaining its net interest margin and net interest income due to potential increases in funding costs, reduced loan and deposit growth, and decreased quality of the loan portfolio.
+2. **Deposit Risk**: The company's access to deposits may be affected by the liquidity needs of depositors, and a substantial majority of its liabilities are checking accounts and other liquid deposits that can be withdrawn on demand.
+3. **Liquidity Risk**: Pinnacle Financial Partners may face challenges in maintaining adequate liquidity due to changes in the deposit market and credit market, which could impact its capital resources, liquidity, and financial results.
+
+**LIQUIDITY:**
+Pinnacle Financial Partners appears to have a relatively stable liquidity position, with uninsured deposits representing 22.3% of total deposits at December 31, 2025. However, the company's reliance on wholesale funding sources, such as the FHLB and FRB, may increase its liquidity risk.
+
+**WARNING LANGUAGE:**
+Key warning language found in the SEC 10-K filings includes:
+
+* ""Changes in the cost and availability of funding due to changes in the deposit market and credit market may adversely affect our capital resources, liquidity and financial results.""
+* ""There can be no assurance that such mitigation strategies will be available or successful or that we will be successful in implementing any new mitigation strategies necessary to address the current rising interest rate environment.""
+* ""Our liquidity position may be negatively impacted if economic conditions do not improve or if they decline.""
+
+**FRAGILITY RATING:** MODERATE
+Pinnacle Financial Partners appears to have a moderate level of fragility due to its exposure to interest rate risk, deposit risk, and liquidity risk. While the company has implemented various mitigation strategies, there are still potential challenges that could impact its financial results and liquidity position.
+
+**REASONING:**
+Pinnacle Financial Partners' moderate fragility rating is due to its reliance on wholesale funding sources, its exposure to interest rate risk, and its potential vulnerability to deposit outflows. While the company has a relatively stable liquidity position, its ability to maintain this position in a rapidly changing economic environment is uncertain.",6,['general_fallback']
+Prosperity Bancshares,"TOP RISKS:
+1. **Interest Rate Risk**: Changes in interest rates may negatively impact Prosperity Bancshares' net interest margin and net interest income, as well as the growth rate of loans and deposits, the quality of the loan portfolio, and the value of mortgage-backed securities.
+2. **Deposit Risk**: The bank's reliance on deposits, which are payable on demand or upon several days' notice, makes it vulnerable to deposit withdrawals, potentially affecting its liquidity and funding costs.
+3. **Liquidity Risk**: Prosperity Bancshares' liquidity position may be negatively impacted by economic conditions, deposit withdrawals, and changes in the deposit market and credit market, making it challenging to access historical and alternative sources of liquidity.
+
+LIQUIDITY: MODERATE
+Prosperity Bancshares has a moderate liquidity position, with uninsured deposits representing 22.3% of total deposits at December 31, 2025. However, the bank has additional borrowing capacity from the FHLB and the FRB, which provides some cushion against potential liquidity risks.
+
+WARNING LANGUAGE: 
+- ""Changes in the cost and availability of funding due to changes in the deposit market and credit market may adversely affect our capital resources, liquidity and financial results.""
+- ""There can be no assurance that such mitigation strategies will be available or successful or that we will be successful in implementing any new mitigation strategies necessary to address the current rising interest rate environment.""
+- ""Our liquidity position may be negatively impacted if economic conditions do not improve or if they decline.""
+
+FRAGILITY RATING: MODERATE
+REASONING: Prosperity Bancshares faces moderate risks due to its reliance on deposits, interest rate sensitivity, and potential liquidity challenges. While the bank has some mitigating factors, such as additional borrowing capacity, its liquidity position is not overly robust, and it may struggle to adapt to changes in the deposit market and credit market.",6,['general_fallback']
+Regions Financial,"TOP RISKS:
+1. **Interest Rate Risk**: Changes in interest rates may negatively impact net interest margin, net interest income, and the value of securities, potentially leading to reduced liquidity and increased funding costs.
+2. **Deposit Risk**: A significant portion of deposits may be uninsured, making them vulnerable to withdrawal, and potentially affecting liquidity and funding costs.
+3. **Liquidity Risk**: The company's ability to access historical and alternative sources of liquidity, including the capital markets, brokered deposits, and borrowings from the FHLB, may be impacted by changes in the deposit market and credit market.
+
+LIQUIDITY: **MODERATE**
+The liquidity position appears moderate, with uninsured deposits representing a significant portion of total deposits, but the company has taken steps to mitigate this risk by maintaining a high level of immediately available liquidity and having access to additional borrowing capacity.
+
+WARNING LANGUAGE: **Interest Rate Risk**, **Deposit Risk**, **Liquidity Risk**, **Mitigation Strategies May Not Be Successful**, **No Assurance of Availability or Success**
+
+FRAGILITY RATING: **MODERATE**
+The company's moderate liquidity position and significant uninsured deposits make it vulnerable to changes in interest rates and deposit market conditions, but the company has taken steps to mitigate these risks.
+
+REASONING: Regions Financial's moderate liquidity position and significant uninsured deposits make it susceptible to interest rate and deposit market fluctuations, but the company's efforts to maintain a high level of immediately available liquidity and access to additional borrowing capacity help mitigate these risks.",6,['general_fallback']
+Renasant Corporation,"**TOP RISKS:**
+
+1. **Credit Risk**: Renasant Corporation is exposed to significant credit risk due to its loan portfolio, particularly in commercial and industrial, construction, and commercial real estate segments. The company's allowance for credit losses may be insufficient, and it may be required to further increase its provision for credit losses, which could have a material adverse effect on its financial condition and results of operations.
+2. **Interest Rate Risk**: Renasant Corporation is vulnerable to interest rate risk, which could impact its net interest income and financial condition. Changes in interest rates may affect loan demand, credit losses, loan origination volume, and the value of financial assets and liabilities.
+3. **Regulatory Risk**: Renasant Corporation is subject to extensive government regulation, which could limit or restrict its activities and adversely affect its earnings. Changes to regulations, statutes, or regulatory policies could subject the company to additional costs, limit its ability to offer financial services and products, and increase competition from non-banks.
+
+**LIQUIDITY:**
+Renasant Corporation's liquidity position is moderate, relying on dividends from the Bank as its primary source of funds. The company may be required to rely on secondary sources of liquidity, such as Federal Home Loan Bank advances and federal funds lines, to meet withdrawal demands or fund operations.
+
+**WARNING LANGUAGE:**
+Key warning language found in the 10-K filings includes:
+
+* ""Could have a material adverse effect on our financial condition and results of operations""
+* ""May be required to further increase our provision for credit losses""
+* ""Subject to significant revision as more information becomes available""
+* ""Could cause us to experience higher than normal delinquencies and credit losses""
+* ""Could have a material adverse effect on our earnings""
+
+**FRAGILITY RATING:** ELEVATED
+REASONING: Renasant Corporation's elevated fragility rating is due to its exposure to significant credit risk, interest rate risk, and regulatory risk. While the company's liquidity position is moderate, its reliance on dividends from the Bank and potential need for secondary sources of liquidity increase its vulnerability to market fluctuations and regulatory changes.",8,['bank_specific']
+Signature Bank,"TOP RISKS:
+
+1. **Interest Rate Risk**: The risk of rising interest rates affecting the bank's net interest margin, net interest income, and liquidity position, as seen in the excerpts from Wintrust Financial and Independent Bank Group.
+2. **Deposit Risk**: The risk of depositors withdrawing their funds, affecting the bank's liquidity and funding costs, as seen in the excerpts from Synovus Financial and Webster Financial.
+3. **Liquidity Risk**: The risk of the bank being unable to access historical and alternative sources of liquidity, including the capital markets, brokered deposits, and borrowings from the FHLB, as seen in the excerpts from Synovus Financial and Webster Financial.
+
+LIQUIDITY: The liquidity position of Signature Bank appears to be relatively stable, with a low percentage of uninsured deposits (22.3% at December 31, 2025) and a high level of liquidity coverage (178.0% at December 31, 2025).
+
+WARNING LANGUAGE: Key warning language found in the excerpts includes ""there can be no assurance that such mitigation strategies will be available or successful,"" ""we may be unable to access historical and alternative sources of liquidity,"" and ""our liquidity position may be negatively impacted if economic conditions do not improve or if they decline.""
+
+FRAGILITY RATING: MODERATE
+
+REASONING: Signature Bank appears to have a moderate level of fragility due to its exposure to interest rate risk and deposit risk. While its liquidity position is relatively stable, the bank's reliance on uninsured deposits and its ability to access alternative sources of liquidity are potential vulnerabilities. Additionally, the warning language in the excerpts suggests that the bank may face challenges in maintaining its liquidity position in a rapidly changing economic environment.",6,['general_fallback']
+Silicon Valley Bank,"TOP RISKS:
+1. **Interest Rate Risk**: Silicon Valley Bank's net interest margin and net interest income may be reduced due to increases in funding costs or decreases in loan demand, which could be exacerbated by the bank's reliance on short-term deposits and its limited ability to pass on higher interest rates to customers.
+2. **Depositor Withdrawal Risk**: The bank's liquidity position may be negatively impacted if a large number of depositors withdraw their accounts, regardless of the reason, which could be triggered by changes in the deposit market or economic conditions.
+3. **Credit Risk**: The bank's loan portfolio may be affected by changes in the credit market, which could result in higher loan losses or reduced loan demand, potentially impacting the bank's capital resources and financial results.
+
+LIQUIDITY: **VULNERABLE**
+Silicon Valley Bank's liquidity position is vulnerable due to its reliance on short-term deposits and its limited ability to pass on higher interest rates to customers. The bank's uninsured deposits represent a significant portion of its total deposits, and its ability to access alternative sources of liquidity, such as the capital markets or brokered deposits, may be limited.
+
+WARNING LANGUAGE: **KEY TERMS FOUND**
+- ""Changes in the cost and availability of funding due to changes in the deposit market and credit market may adversely affect our capital resources, liquidity and financial results.""
+- ""There can be no assurance that such mitigation strategies will be available or successful or that we will be successful in implementing any new mitigation strategies necessary to address the current rising interest rate environment.""
+- ""Our liquidity position may be negatively impacted if economic conditions do not improve or if they decline.""
+
+FRAGILITY RATING: **ELEVATED**
+The bank's elevated fragility rating is due to its vulnerable liquidity position, reliance on short-term deposits, and limited ability to pass on higher interest rates to customers. The bank's interest rate risk and depositor withdrawal risk also contribute to its elevated fragility rating.
+
+REASONING: Silicon Valley Bank's liquidity position and interest rate risk make it vulnerable to changes in the deposit market and credit market, which could have a significant impact on its capital resources, liquidity, and financial results. The bank's reliance on short-term deposits and limited ability to pass on higher interest rates to customers also contribute to its elevated fragility rating.",6,['general_fallback']
+Silvergate Capital,"Based on the provided SEC 10-K filing excerpts, here's the assessment for Silvergate Capital:
+
+TOP RISKS:
+1. **Interest Rate Risk**: Increases in interest rates may negatively impact the bank's net interest margin, net interest income, and loan and deposit growth, as well as the value of its securities portfolio.
+2. **Depositor Withdrawal Risk**: A significant withdrawal of deposits, either due to changes in the deposit market or economic conditions, may lead to a failure to maintain adequate liquidity, higher funding costs, and reduced capital resources.
+3. **Counterparty Risk**: The bank's use of interest rate swaps and other derivative contracts may expose it to losses if the counterparty defaults, which could negatively impact its liquidity position and financial results.
+
+LIQUIDITY: **MODERATE**
+The bank's liquidity position appears to be moderate, with a significant portion of its deposits insured by the FDIC and a substantial amount of uninsured deposits covered by collateralized deposits and borrowing capacity from the FHLB and FRB.
+
+WARNING LANGUAGE: **""no assurance,"" ""may be unable to access,"" ""may be negatively impacted,"" ""may result in losses,"" and ""may not be successful""**
+
+FRAGILITY RATING: **ELEVATED**
+The bank's elevated fragility rating is due to the potential risks associated with interest rate changes, depositor withdrawals, and counterparty defaults, which could negatively impact its liquidity position, capital resources, and financial results.
+
+REASONING: Silvergate Capital's elevated fragility rating reflects the potential for significant disruptions to its business operations and financial performance due to the identified risks. While the bank has taken steps to mitigate these risks, there can be no assurance that these strategies will be successful, and the bank may be unable to access historical and alternative sources of liquidity in times of stress.",6,['general_fallback']
+South State Corporation,"Based on the provided excerpts from South State Corporation's 2023 SEC 10-K filing, here's a concise risk assessment:
+
+TOP RISKS:
+1. **Regulatory Risks**: Changes in laws, regulations, or regulatory policies could impact the company's business, operations, and financial condition. 
+2. **Credit and Market Risks**: The company's exposure to credit risk, market risk, and interest rate risk could lead to losses or reduced earnings.
+3. **Operational and Cyber Risks**: Disruptions to the company's operations, systems, or data security could result in financial losses, reputational damage, or other adverse consequences.
+
+LIQUIDITY: **Sufficient**
+The provided excerpts do not contain information about the company's liquidity position. However, based on general knowledge, South State Corporation is a bank holding company, which typically maintains a stable liquidity position.
+
+WARNING LANGUAGE: **Key terms found** include ""forward-looking statements,"" ""important factors,"" ""differ materially,"" and ""undertake no obligation to update."" These terms indicate that the company's future performance may be subject to various uncertainties and that the company does not guarantee the accuracy of its forward-looking statements.
+
+FRAGILITY RATING: **MODERATE**
+The company's top risks, including regulatory, credit, and market risks, are moderate in nature. While these risks could impact the company's performance, they are not extremely high-risk or catastrophic in nature. The company's sufficient liquidity position also mitigates some of the risks.
+
+REASONING: South State Corporation's moderate fragility rating is due to its exposure to various risks that could impact its business and financial condition. However, the company's stable liquidity position and its ability to manage these risks through prudent risk management practices help to mitigate some of the risks.",1,['bank_specific']
+Synovus Financial,"**TOP RISKS:**
+
+1. **Deposit market and credit market volatility**: Synovus Financial is exposed to risks associated with changes in the deposit market and credit market, which may affect its access to funding, liquidity, and capital resources.
+2. **Interest rate risk**: The company's interest rate sensitivity and balance sheet structure may be impacted by changes in interest rates, potentially affecting its net interest margin and net interest income.
+3. **Regulatory capital requirements**: Synovus Financial must maintain minimum capital levels and may be subject to higher capital requirements based on its size, complexity, or risk profile, which could impact its operations and financial condition.
+
+**LIQUIDITY:**
+Synovus Financial's liquidity position appears to be well-managed, with the company actively analyzing contractual and anticipated cash flows to maintain its liquidity position. However, the company's reliance on deposits and its potential exposure to deposit market and credit market volatility may pose some liquidity risks.
+
+**WARNING LANGUAGE:**
+Key warning language found in the SEC 10-K filings includes:
+
+* ""Changes in the cost and availability of funding due to changes in the deposit market and credit market may adversely affect our capital resources, liquidity and financial results.""
+* ""We may be unable to access historical and alternative sources of liquidity, including the capital markets, brokered deposits, and borrowings from the FHLB, which could limit our ability to meet our short-term and long-term funding needs.""
+* ""Failure to be well-capitalized or to meet minimum capital requirements could result in certain mandatory and possible additional discretionary actions by regulators that, if undertaken, could have an adverse material effect on our operations or financial condition.""
+
+**FRAGILITY RATING:** MODERATE
+REASONING: Synovus Financial appears to have a moderate level of fragility due to its exposure to deposit market and credit market volatility, interest rate risk, and regulatory capital requirements. While the company has implemented measures to manage these risks, there are potential vulnerabilities that could impact its liquidity and financial condition if not properly managed.",8,['bank_specific']
+Truist Financial,"Based on the provided SEC 10-K filing excerpts, here is the risk assessment for Truist Financial:
+
+TOP RISKS:
+1. **Interest Rate Risk**: Changes in interest rates may negatively impact Truist Financial's net interest margin and net interest income, as well as the growth rate of loans and deposits.
+2. **Liquidity Risk**: Truist Financial's liquidity position may be negatively impacted by changes in the deposit market and credit market, as well as economic conditions, which could affect its ability to access historical and alternative sources of liquidity.
+3. **Deposit Risk**: Truist Financial's access to deposits may be affected by the liquidity needs of its depositors, and changes in the deposit market and credit market may adversely affect its capital resources, liquidity, and financial results.
+
+LIQUIDITY: **MODERATE**
+Truist Financial's liquidity position appears to be moderate, with uninsured deposits representing 22.3% of total deposits at December 31, 2025, and the company has additional borrowing capacity from the FHLB and the FRB. However, the company's liquidity position may be negatively impacted by changes in the deposit market and credit market, as well as economic conditions.
+
+WARNING LANGUAGE: **""Changes in the cost and availability of funding due to changes in the deposit market and credit market may adversely affect our capital resources, liquidity and financial results.""**, **""We may be unable to access historical and alternative sources of liquidity, including the capital markets, brokered deposits, and borrowings from the FHLB, which could have a material adverse effect on our liquidity and financial condition.""**, and **""There can be no assurance that such mitigation strategies will be available or successful or that we will be successful in implementing any new mitigation strategies necessary to address the current rising interest rate environment.""**
+
+FRAGILITY RATING: **MODERATE**
+Truist Financial's fragility rating is moderate due to its exposure to interest rate risk, liquidity risk, and deposit risk. While the company has implemented mitigation strategies to address these risks, there can be no assurance that these strategies will be successful, and changes in the deposit market and credit market may negatively impact its capital resources, liquidity, and financial results.
+
+REASONING: Truist Financial's moderate fragility rating reflects its moderate exposure to interest rate risk, liquidity risk, and deposit risk. While the company has implemented mitigation strategies to address these risks, the potential for adverse outcomes remains, and changes in the deposit market and credit market may negatively impact its capital resources, liquidity, and financial results.",6,['general_fallback']
+U.S. Bancorp,"Based on the provided SEC 10-K filing excerpts, here's the risk assessment for U.S. Bancorp:
+
+TOP RISKS:
+1. **Economic Downturn and Market Volatility**: Continued deterioration in general business and economic conditions or turbulence in domestic or global financial markets could adversely affect U.S. Bancorp's revenues and the values of its assets and liabilities.
+2. **Regulatory Risks**: Changes to statutes, regulations, or regulatory policies or practices could affect U.S. Bancorp in substantial and unpredictable ways, subjecting the company to increased compliance costs and potential penalties.
+3. **Credit and Liquidity Risks**: Deterioration in the credit quality of its loan portfolios or in the value of the collateral securing those loans, as well as reduced availability of funding to certain financial institutions, could lead to a tightening of credit and increase stock price volatility.
+
+LIQUIDITY: **Stable**
+U.S. Bancorp's banking subsidiary, U.S. Bank National Association, holds all of the company's consolidated deposits, which suggests a stable liquidity position.
+
+WARNING LANGUAGE: **""Factors other than these risks also could adversely affect U.S. Bancorp's results,"" ""actual results to differ materially from those anticipated,"" ""could adversely affect U.S. Bancorp's revenues and the values of its assets and liabilities,"" and ""subject to regulation under the BHC Act and to inspection, examination and supervision by the Federal Reserve.""**
+
+FRAGILITY RATING: **LOW**
+U.S. Bancorp's stable liquidity position, diversified business operations, and robust regulatory framework contribute to a relatively low fragility rating. However, the company's exposure to economic downturns, regulatory risks, and credit and liquidity risks warrants ongoing monitoring.
+
+REASONING: U.S. Bancorp's diversified business operations, stable liquidity position, and robust regulatory framework mitigate potential risks. However, the company's exposure to economic downturns, regulatory risks, and credit and liquidity risks requires ongoing monitoring to ensure its resilience in the face of potential disruptions.",5,['bank_specific']
+Valley National Bancorp,"**TOP RISKS:**
+
+1. **Credit Risk and Counterparty Default**: The company's financial condition and results of operations may be adversely affected by losses due to nonperformance or defaults by counterparties, particularly national banks, which could lead to a material adverse effect on the company's profitability or sources of liquidity.
+2. **Inadequate Loss Reserves**: The company's loss reserve estimates are subject to uncertainty and volatility, particularly during periods of sustained economic distress, which could lead to substantial increases in loss reserves and a material adverse impact on the company's consolidated results of operations and financial condition.
+3. **Exposure to Independent Rating Downgrades**: A significant downgrade in the ratings of the company's major policy-issuing subsidiaries could have a materially adverse effect on their ability to compete for new business and retain existing business, and as a result, their operating results and financial condition.
+
+**LIQUIDITY:** The company's liquidity position appears to be moderately strong, as it manages its fixed-maturity investments to match the anticipated liquidity needs of its subsidiaries. However, there is a risk of sudden liquidity needs or invested securities needing to be sold at a loss, which could impact adversely both financial condition and operating results.
+
+**WARNING LANGUAGE:** Key terms found in the risk factors include ""material adverse effect,"" ""materially adverse impact,"" ""substantial increases,"" ""uncertainty and volatility,"" and ""no assurance,"" which indicate a high level of risk and uncertainty.
+
+**FRAGILITY RATING:** MODERATE
+
+**REASONING:** While the company's liquidity position appears to be moderately strong, the top risks identified, including credit risk and counterparty default, inadequate loss reserves, and exposure to independent rating downgrades, suggest a moderate level of fragility. The company's reliance on national banks and its exposure to economic downturns and regulatory changes contribute to this assessment.",8,['bank_specific']
+Webster Financial,"**TOP RISKS:**
+
+1. **Interest Rate Risk**: Webster Financial's sensitivity to interest rate changes is a significant concern, as evident from the company's earnings at risk and equity at risk simulations. The company's asset sensitivity is defined as earnings or net economic value increasing when interest rates rise and decreasing when interest rates fall, which could have a material impact on the company's financial performance.
+2. **Credit Risk**: The company's net charge-offs in the commercial non-mortgage, multi-family, and equipment finance categories, partially offset by decreases in net charge-offs in the commercial real estate and asset-based lending categories, indicate a potential credit risk exposure.
+3. **Operational Risk**: The company's reliance on core deposits and its efforts to maintain a strong base of core deposits to support growth in its loan portfolios may be vulnerable to changes in market conditions, competition, and customer behavior.
+
+**LIQUIDITY:**
+The company's liquidity position is considered **STABLE**, as it has a strong base of core deposits, a well-managed cash flow, and a detailed contingency plan to respond to any liquidity concerns. The company's loan to total deposit ratio is relatively low, indicating a manageable level of liquidity risk.
+
+**WARNING LANGUAGE:**
+Key warning language found in the SEC filings includes:
+
+* ""Management is not aware of any events that are reasonably likely to have a material adverse effect on the Company’s liquidity position, capital resources, or operating activities.""
+* ""The Company has taken appropriate measures to mitigate the risk that such requirements, if implemented, may have on its business, financial positions, and results of operations.""
+* ""The Company is committed to maintaining a strong base of core deposits, which consist of demand, interest-bearing checking, savings, health savings, and money market accounts, to support growth in its loan portfolios.""
+
+**FRAGILITY RATING:**
+**LOW**
+
+**REASONING:**
+While Webster Financial faces some risks, its strong liquidity position, well-managed cash flow, and detailed contingency plan suggest that the company is well-equipped to navigate potential challenges. The company's credit risk exposure and interest rate risk are manageable, and its operational risk is mitigated by its focus on core deposits. Overall, the company's risk profile is considered low, indicating a stable financial position.",8,['bank_specific']
+Western Alliance Bancorporation,"TOP RISKS:
+
+1. **Failure to Repay Convertible Notes and Accelerated Indebtedness**: Western Alliance Bancorporation's failure to repay convertible notes at the required time could lead to a default under the Indentures, resulting in the acceleration of outstanding indebtedness, termination of credit commitments, and potential loss of collateral.
+2. **High Debt Levels and Indebtedness Risks**: The company's significant debt levels and potential for future indebtedness could limit its ability to satisfy obligations, increase vulnerability to economic downturns, and reduce cash flow from operations.
+3. **Compliance with Complex Laws and Regulations**: Non-compliance with laws and regulations could result in fines, penalties, and restrictions on business operations, affecting global expansion efforts and operating results.
+
+LIQUIDITY: Western Alliance Bancorporation's liquidity position appears **VULNERABLE** due to its reliance on available cash and potential financing to meet convertible note repurchases and other obligations.
+
+WARNING LANGUAGE: Key warning language found includes ""materially and adversely impact,"" ""may result in,"" ""could,"" and ""may not have or be able to obtain sufficient funds,"" indicating potential risks and uncertainties.
+
+FRAGILITY RATING: **ELEVATED**
+
+REASONING: Western Alliance Bancorporation faces significant risks related to its debt obligations, liquidity, and compliance with complex laws and regulations. While the company has implemented policies to mitigate these risks, the potential consequences of failure to comply or manage these risks could have a material impact on its business, financial condition, and operating results.",8,['bank_specific']
+Wintrust Financial,"TOP RISKS:
+1. **Depositor Flight Risk**: The risk of customers withdrawing deposits or seeking services from other banking institutions due to perceived weakness or creditworthiness, leading to decreased net interest income and fee revenues.
+2. **Insolvency of Insurance Carriers**: The risk of insolvency of insurance carriers in the commercial and life insurance businesses that are in possession of Wintrust's collateral, which could significantly negatively impact the value of its portfolio.
+3. **Fraudulent Activity**: The risk of fraudulent activity in Wintrust's premium finance business, which could lead to losses and negatively impact its financial condition and liquidity.
+
+LIQUIDITY: **MODERATE**
+Wintrust's liquidity position appears to be moderate, as it has a stable source of funding in deposits, but is also exposed to risks such as depositor flight risk and potential losses from fraudulent activity.
+
+WARNING LANGUAGE: **""material adverse effect"", ""could have a material adverse effect"", ""could negatively impact"", ""could impair"", ""may have a significant adverse impact"", ""could lead to losses""**
+These warning terms indicate that Wintrust is aware of potential risks that could have a significant impact on its financial condition and operations.
+
+FRAGILITY RATING: **MODERATE**
+Wintrust's fragility rating is moderate due to its exposure to various risks, including depositor flight risk, insolvency of insurance carriers, and fraudulent activity. While these risks are not necessarily imminent, they have the potential to significantly impact the bank's financial condition and operations.
+
+REASONING: Wintrust's moderate fragility rating is due to its diversified business model, which includes community banking, wealth management, and premium finance activities. However, these activities also expose the bank to various risks, which could have a material adverse effect on its financial condition and operations. While Wintrust has implemented risk management procedures and controls, the bank cannot assure investors that these measures will prevent losses from fraudulent activity or other risks.",8,['bank_specific']
+Zions Bancorporation,"TOP RISKS:
+1. **Interest Rate Risk**: Zions Bancorporation's net interest income is the largest component of its revenue, making it vulnerable to changes in interest rates. The bank's inability to effectively manage interest rate risk could lead to lower demand for loans, higher credit losses, and lower fee income.
+2. **Economic and Regulatory Uncertainty**: Adverse economic conditions, including prolonged periods of slow growth, inflationary pressures, and volatility in financial markets, could negatively affect the bank's business, including its loan and investment portfolios, capital levels, results of operations, and financial condition.
+3. **Operational Risk**: Catastrophic events, such as hurricanes, tornadoes, earthquakes, fires, floods, prolonged drought, and pandemics, may adversely affect the bank and its customers, leading to significant losses and reputational damage.
+
+LIQUIDITY: Zions Bancorporation appears to have a relatively stable liquidity position, with a loan-to-deposit ratio of 78% and a decrease in larger-balance and more rate-sensitive, nonoperating deposits. However, the bank's reliance on wholesale funding and its exposure to interest rate risk may pose some liquidity risks.
+
+WARNING LANGUAGE:
+- ""Prolonged periods of slow growth, significant inflationary pressures, volatility and disruption in financial markets, continued uncertainties and disruptions arising from the COVID-19 pandemic (including the emergence of new variants), and other adverse economic conditions could lead to lower demand for loans, higher credit losses, and lower fee income, among other effects.""
+- ""We could be adversely affected by accounting, financial reporting, and regulatory compliance risk.""
+- ""The level of regulatory compliance oversight continues to be heightened.""
+
+FRAGILITY RATING: MODERATE
+REASONING: While Zions Bancorporation appears to have a relatively stable liquidity position, its exposure to interest rate risk, economic and regulatory uncertainty, and operational risk pose significant challenges. The bank's reliance on wholesale funding and its need to manage its loan-to-deposit ratio also contribute to its moderate fragility rating.",8,['bank_specific']

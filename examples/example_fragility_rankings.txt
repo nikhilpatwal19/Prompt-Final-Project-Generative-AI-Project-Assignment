@@ -1,0 +1,28 @@
+======================================================================
+FRAGILITY RANKINGS — Latest Year Per Bank (V2 Data-Driven Index)
+======================================================================
+
+Rank  Bank                          V2 Score    Failed  
+--------------------------------------------------------
+1     First Horizon                 0.6965              
+2     KeyCorp                       0.6865              
+3     Signature Bank                0.6707      YES     
+4     First Republic Bank           0.6396      YES     
+5     PacWest Bancorp               0.6287              
+6     Wintrust Financial            0.6287              
+7     Zions Bancorporation          0.5930              
+8     M&T Bank                      0.5862              
+9     Prosperity Bancshares         0.5427              
+10    Huntington Bancshares         0.5356              
+11    Truist Financial              0.5147              
+12    Silicon Valley Bank           0.5029      YES     
+13    Regions Financial             0.4971              
+14    Fifth Third Bancorp           0.4853              
+15    Synovus Financial             0.4458              
+16    U.S. Bancorp                  0.4284              
+17    Webster Financial             0.4258              
+18    Citizens Financial Group      0.3697              
+19    Heartland BancCorp            0.3106              
+
+Note: Higher score = more structurally fragile.
+Failed banks confirmed via FDIC Failed Bank List.

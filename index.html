@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Financial Fragility Detector</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: #1a2035;
+            --bg-card-hover: #1f2847;
+            --text-primary: #e8eaf0;
+            --text-secondary: #8892a8;
+            --text-dim: #5a6378;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --danger: #ef4444;
+            --danger-glow: rgba(239, 68, 68, 0.12);
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --border: rgba(255, 255, 255, 0.06);
+            --gradient-1: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --gradient-2: linear-gradient(135deg, #ef4444 0%, #f59e0b 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Subtle grid texture */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ── NAV ── */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(10, 14, 26, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* ── HERO ── */
+        .hero {
+            padding: 160px 0 100px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-glow);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: 24px;
+            padding: 6px 18px;
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 5vw, 58px);
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        h1 .gradient-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 640px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        /* ── STATS BAR ── */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+            margin: 60px 0;
+        }
+
+        .stat {
+            background: var(--bg-secondary);
+            padding: 24px 20px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent);
+        }
+
+        .stat-number.danger {
+            color: var(--danger);
+        }
+
+        .stat-number.success {
+            color: var(--success);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        /* ── SECTIONS ── */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            margin-bottom: 16px;
+        }
+
+        .section-desc {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin-bottom: 48px;
+        }
+
+        /* ── PROBLEM SECTION ── */
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .problem-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 32px;
+            transition: all 0.3s;
+        }
+
+        .problem-card:hover {
+            border-color: rgba(59, 130, 246, 0.2);
+            background: var(--bg-card-hover);
+        }
+
+        .problem-card.highlight {
+            border-color: rgba(239, 68, 68, 0.3);
+            background: var(--danger-glow);
+        }
+
+        .problem-icon {
+            font-size: 28px;
+            margin-bottom: 16px;
+        }
+
+        .problem-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .problem-card p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* ── PIPELINE ── */
+        .pipeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .pipe-step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .pipe-step:hover {
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .pipe-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--accent);
+            font-weight: 700;
+            background: var(--accent-glow);
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .pipe-step h4 {
+            font-size: 15px;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .pipe-step p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ── AI COMPONENTS ── */
+        .ai-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .ai-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 32px 28px;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+        }
+
+        .ai-card:nth-child(1)::before {
+            background: var(--gradient-1);
+        }
+
+        .ai-card:nth-child(2)::before {
+            background: linear-gradient(90deg, #22c55e, #3b82f6);
+        }
+
+        .ai-card:nth-child(3)::before {
+            background: var(--gradient-2);
+        }
+
+        .ai-card:hover {
+            border-color: rgba(59, 130, 246, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .ai-tag {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 14px;
+            color: var(--accent);
+        }
+
+        .ai-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .ai-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .ai-detail {
+            font-size: 12px;
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+            padding: 10px 14px;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+
+        /* ── RESULTS ── */
+        .results-table-wrap {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th {
+            background: var(--bg-secondary);
+            padding: 14px 18px;
+            text-align: left;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            font-weight: 600;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        tr:hover td {
+            background: rgba(59, 130, 246, 0.03);
+        }
+
+        .tag-failed {
+            background: var(--danger-glow);
+            color: var(--danger);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .tag-stable {
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--success);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .score-bar {
+            display: inline-block;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--accent);
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+        /* ── SCREENSHOTS ── */
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .screenshot {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+        }
+
+        .screenshot img {
+            width: 100%;
+            display: block;
+        }
+
+        .screenshot-caption {
+            padding: 12px 16px;
+            font-size: 13px;
+            color: var(--text-dim);
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 13px;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+
+            .problem-grid,
+            .ai-cards,
+            .screenshot-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pipeline {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+
+        /* ── ANIMATIONS ── */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-1 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-4 {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container">
+            <div class="nav-logo"><span>&#9888;</span> Fragility Detector</div>
+            <div class="nav-links">
+                <a href="#problem">Problem</a>
+                <a href="#pipeline">Pipeline</a>
+                <a href="#ai">AI Components</a>
+                <a href="#results">Results</a>
+                <a href="#links">Links</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge animate">Generative AI Final Project</div>
+            <h1 class="animate delay-1">
+                AI Financial<br><span class="gradient-text">Fragility Detector</span>
+            </h1>
+            <p class="hero-subtitle animate delay-2">
+                An early warning system that detects structural weakness in regional banks
+                before stress becomes visible in market prices. Combining financial ratio analysis,
+                NLP on SEC filings, and three generative AI components.
+            </p>
+            <div class="hero-buttons animate delay-3">
+                <a href="https://github.com/nikhilpatwal19/Prompt-Final-Project-Generative-AI-Project-Assignment.git"
+                    class="btn btn-primary" target="_blank">
+                    &#128193; GitHub Repository
+                </a>
+                <a href="#results" class="btn btn-secondary">
+                    &#128200; View Results
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="container">
+        <div class="stats-bar animate delay-4">
+            <div class="stat">
+                <div class="stat-number">19</div>
+                <div class="stat-label">Banks Analyzed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number danger">3</div>
+                <div class="stat-label">Failures Detected</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Years of Data</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number success">3</div>
+                <div class="stat-label">Gen AI Components</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">44</div>
+                <div class="stat-label">Notebook Cells</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number success">0</div>
+                <div class="stat-label">Errors</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROBLEM -->
+    <section id="problem">
+        <div class="container">
+            <div class="section-label">The Problem</div>
+            <h2>Banks Don't Fail Overnight</h2>
+            <p class="section-desc">
+                By the time headlines announce insolvency, the signals have already been filed
+                quietly in dense financial statements. Liquidity ratios shift. Risk sections grow
+                longer. The language changes from confident to conditional.
+            </p>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">&#9200;</div>
+                    <h3>Time Cost</h3>
+                    <p>Manual multi-year ratio analysis per bank takes analysts weeks. Retail investors rarely do it at
+                        all.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">&#128065;</div>
+                    <h3>Accuracy Cost</h3>
+                    <p>Human oversight in identifying subtle trend shifts across hundreds of pages of 10-K filings.</p>
+                </div>
+                <div class="problem-card highlight">
+                    <div class="problem-icon">&#9888;</div>
+                    <h3>Risk Cost</h3>
+                    <p>Failure to recognize structural fragility before distress events — SVB collapsed with $209B in
+                        assets.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">&#129302;</div>
+                    <h3>LLM Gap</h3>
+                    <p>Base LLMs can summarize a 10-K, but they don't normalize stress, quantify vulnerability, or
+                        produce comparable scores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section id="pipeline">
+        <div class="container">
+            <div class="section-label">How It Works</div>
+            <h2>End-to-End Pipeline</h2>
+            <p class="section-desc">
+                Raw data flows through seven stages — from FDIC API calls to a ranked fragility index
+                with interactive dashboards.
+            </p>
+            <div class="pipeline">
+                <div class="pipe-step">
+                    <div class="pipe-num">01</div>
+                    <h4>Data Collection</h4>
+                    <p>FDIC API, SEC EDGAR 10-K filings, Yahoo Finance stock prices</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">02</div>
+                    <h4>Ratio Engineering</h4>
+                    <p>Liquidity, leverage, interest coverage, deposit risk ratios</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">03</div>
+                    <h4>NLP Scoring</h4>
+                    <p>Hedging density, VADER sentiment, risk section growth</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">04</div>
+                    <h4>RAG Analysis</h4>
+                    <p>ChromaDB vector search on chunked 10-K filings</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">05</div>
+                    <h4>LLM Scoring</h4>
+                    <p>Prompt-engineered multi-dimensional fragility assessment</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">06</div>
+                    <h4>Synthetic Data</h4>
+                    <p>80 LLM-generated bank profiles across 5 fragility archetypes</p>
+                </div>
+                <div class="pipe-step">
+                    <div class="pipe-num">07</div>
+                    <h4>ML Models</h4>
+                    <p>Logistic Regression, Gradient Boosting, Random Forest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI COMPONENTS -->
+    <section id="ai">
+        <div class="container">
+            <div class="section-label">Generative AI</div>
+            <h2>Three AI Components</h2>
+            <p class="section-desc">
+                The project implements three of the five available generative AI techniques.
+            </p>
+            <div class="ai-cards">
+                <div class="ai-card">
+                    <div class="ai-tag">Component 1</div>
+                    <h3>RAG</h3>
+                    <p>Retrieval-Augmented Generation grounds LLM assessments in real SEC filing data.</p>
+                    <div class="ai-detail">
+                        ChromaDB vector DB<br>
+                        500-word overlapping chunks<br>
+                        3 retrieval strategies<br>
+                        30/30 banks covered (100%)
+                    </div>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-tag">Component 2</div>
+                    <h3>Prompt Engineering</h3>
+                    <p>Systematic prompts for multi-dimensional risk scoring via Groq/Llama.</p>
+                    <div class="ai-detail">
+                        Analyst persona system prompt<br>
+                        Structured ratio injection<br>
+                        JSON output parsing<br>
+                        Comparative bank analysis
+                    </div>
+                </div>
+                <div class="ai-card">
+                    <div class="ai-tag">Component 3</div>
+                    <h3>Synthetic Data</h3>
+                    <p>LLM-generated financial profiles to address class imbalance (only 4 real failures).</p>
+                    <div class="ai-detail">
+                        5 fragility archetypes<br>
+                        80 synthetic profiles<br>
+                        Quality-validated distributions<br>
+                        Training set: 112 → 192 rows
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results">
+        <div class="container">
+            <div class="section-label">Results</div>
+            <h2>Fragility Rankings</h2>
+            <p class="section-desc">
+                Top banks ranked by data-driven fragility score (V2). Failed banks are
+                highlighted — they should rank high if the system works.
+            </p>
+            <div class="results-table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Bank</th>
+                            <th>Fragility V2</th>
+                            <th>LLM Score</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><strong>First Horizon</strong></td>
+                            <td>0.697 <span class="score-bar" style="width:70px"></span></td>
+                            <td>7/10</td>
+                            <td><span class="tag-stable">Stable</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><strong>KeyCorp</strong></td>
+                            <td>0.687 <span class="score-bar" style="width:69px"></span></td>
+                            <td>7/10</td>
+                            <td><span class="tag-stable">Stable</span></td>
+                        </tr>
+                        <tr style="background: rgba(239,68,68,0.05);">
+                            <td>3</td>
+                            <td><strong>Signature Bank</strong></td>
+                            <td>0.671 <span class="score-bar" style="width:67px; background: var(--danger)"></span></td>
+                            <td>—</td>
+                            <td><span class="tag-failed">Failed</span></td>
+                        </tr>
+                        <tr style="background: rgba(239,68,68,0.05);">
+                            <td>4</td>
+                            <td><strong>First Republic Bank</strong></td>
+                            <td>0.640 <span class="score-bar" style="width:64px; background: var(--danger)"></span></td>
+                            <td>8/10</td>
+                            <td><span class="tag-failed">Failed</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><strong>PacWest Bancorp</strong></td>
+                            <td>0.629 <span class="score-bar" style="width:63px"></span></td>
+                            <td>7/10</td>
+                            <td><span class="tag-stable">Stressed</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Zions Bancorporation</strong></td>
+                            <td>0.593 <span class="score-bar" style="width:59px"></span></td>
+                            <td>8/10</td>
+                            <td><span class="tag-stable">Stable</span></td>
+                        </tr>
+                        <tr style="background: rgba(239,68,68,0.05);">
+                            <td>10</td>
+                            <td><strong>Silicon Valley Bank</strong></td>
+                            <td>0.503 <span class="score-bar" style="width:50px; background: var(--warning)"></span>
+                            </td>
+                            <td>—</td>
+                            <td><span class="tag-failed">Failed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="color: var(--text-dim); font-size: 13px; margin-top: 12px;">
+                * Signature Bank and First Republic correctly ranked in top 4. SVB scored lower due to
+                its unique depositor concentration risk not fully captured by standard ratios.
+            </p>
+        </div>
+    </section>
+
+    <!-- VISUALIZATIONS -->
+    <section>
+        <div class="container">
+            <div class="section-label">Visualizations</div>
+            <h2>Output Gallery</h2>
+            <p class="section-desc">14 visualizations generated including interactive Plotly dashboards,
+                heatmaps, ROC curves, and feature importance charts.</p>
+            <div class="screenshot-grid">
+                <div class="screenshot">
+                    <img src="outputs/" alt="Fragility Heatmap" loading="lazy">
+                    <div class="screenshot-caption">Fragility score heatmap across banks and years</div>
+                </div>
+                <div class="screenshot">
+                    <img src="outputs/" alt="Model Evaluation" loading="lazy">
+                    <div class="screenshot-caption">ROC curves, confusion matrix, and cross-validation</div>
+                </div>
+                <div class="screenshot">
+                    <img src="outputs/" alt="Weights" loading="lazy">
+                    <div class="screenshot-caption">Hand-picked vs data-driven fragility weights</div>
+                </div>
+                <div class="screenshot">
+                    <img src="outputs/" alt="Synthetic Data" loading="lazy">
+                    <div class="screenshot-caption">Real vs synthetic data distribution validation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section>
+        <div class="container">
+            <div class="section-label">Technology</div>
+            <h2>Tech Stack</h2>
+            <div class="pipeline" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                <div class="pipe-step">
+                    <h4>Data</h4>
+                    <p>FDIC API, SEC EDGAR, Yahoo Finance, pandas</p>
+                </div>
+                <div class="pipe-step">
+                    <h4>NLP</h4>
+                    <p>NLTK VADER, BeautifulSoup, regex extraction</p>
+                </div>
+                <div class="pipe-step">
+                    <h4>Gen AI</h4>
+                    <p>Groq API, Llama 3.3 70B, ChromaDB, sentence-transformers</p>
+                </div>
+                <div class="pipe-step">
+                    <h4>ML</h4>
+                    <p>scikit-learn, Logistic Regression, Gradient Boosting, Random Forest</p>
+                </div>
+                <div class="pipe-step">
+                    <h4>Visualization</h4>
+                    <p>Matplotlib, Seaborn, Plotly (interactive HTML)</p>
+                </div>
+                <div class="pipe-step">
+                    <h4>Infrastructure</h4>
+                    <p>Jupyter Notebook, Python 3.12, GitHub Pages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links">
+        <div class="container" style="text-align: center;">
+            <div class="section-label">Project Links</div>
+            <h2>Access the Project</h2>
+            <div class="hero-buttons" style="margin-top: 32px;">
+                <a href="https://github.com/nikhilpatwal19/Prompt-Final-Project-Generative-AI-Project-Assignment.git"
+                    class="btn btn-primary" target="_blank">
+                    &#128193; GitHub Repository
+                </a>
+                <a href="https://aifinancialfragilitydetector.streamlit.app/" class="btn btn-primary" target="_blank">
+                    &#128202; Live Demo (Streamlit)
+                </a>
+                <a href="AI_Financial_Fragility_Detector_Report.pdf" class="btn btn-secondary" target="_blank">
+                    &#128196; PDF Report
+                </a>
+                <a href="https://youtu.be/YOUR_VIDEO_ID" class="btn btn-secondary" target="_blank">
+                    <!--Youtube Video: UPDATE THIS LINK AFTER RECORDING -->
+                    &#127909; Video Demo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>AI Financial Fragility Detector &mdash; Nikhil Patwal &mdash; Northeastern University &mdash; April 2026
+            </p>
+            <p style="margin-top: 8px;">Built with Python, Groq/Llama, ChromaDB, and scikit-learn.
+                <a href="https://github.com/nikhilpatwal19/Prompt-Final-Project-Generative-AI-Project-Assignment.git">View
+                    source</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
